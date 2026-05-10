@@ -35,7 +35,6 @@
 		typst
 
 		# apps
-		zathura 
 		protonup-qt
 		
 		# misc
