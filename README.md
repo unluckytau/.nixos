@@ -6,7 +6,7 @@
 
 ### Installation
 ```
-curl https://raw.githubusercontent.com/tau-zeta/.nix/main/install.sh > install.sh
+curl https://raw.githubusercontent.com/unluckytau/.nix/main/install.sh > install.sh
 chmod +x ./install.sh
 ./install.sh
 ```
