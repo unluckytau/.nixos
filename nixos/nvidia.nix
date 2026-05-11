@@ -6,6 +6,7 @@
 		"nvidia-drm.fbdev=1"
 		"nvidia.NVreg_PreserveVideoMemoryAllocations=1"
 		"nvidia.NVreg_TemporaryFilePath=/var/tmp"
+		"mem_sleep_default=s2idle"
 	];
 
 	services.xserver.videoDrivers = [ 
@@ -22,8 +23,8 @@
 	hardware.nvidia = {
 		modesetting.enable = true;
 		powerManagement.enable = true;
-		powerManagement.finegrained = true;
-		open = false;
+		powerManagement.finegrained = false;
+		open = true;
 		nvidiaSettings = true;
 		package = config.boot.kernelPackages.nvidiaPackages.stable;
 		
