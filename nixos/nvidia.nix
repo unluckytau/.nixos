@@ -6,7 +6,6 @@
 		"nvidia-drm.fbdev=1"
 		"nvidia.NVreg_PreserveVideoMemoryAllocations=1"
 		"nvidia.NVreg_TemporaryFilePath=/var/tmp"
-		"mem_sleep_default=s2idle"
 	];
 
 	services.xserver.videoDrivers = [ 
