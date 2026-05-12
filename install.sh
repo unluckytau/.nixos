@@ -1,12 +1,12 @@
 #!/usr/bin/env nix-shell
 #!nix-shell -p vim git --run "bash ./install.sh"
 
-git clone https://github.com/unluckytau/.nix.git
+git clone https://github.com/unluckytau/.nixos.git
 git clone https://github.com/unluckytau/hyprland.git
 
-sudo cp /etc/nixos/hardware-configuration.nix /home/tau/.nix/nixos/hardware-configuration.nix
+sudo cp /etc/nixos/hardware-configuration.nix /home/tau/.nixos/system/hardware-configuration.nix
 
-cd .nix/
+cd .nixos/
 
 git add .
 

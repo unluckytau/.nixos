@@ -21,7 +21,7 @@
 				inherit system;
 				specialArgs = { inherit inputs system user host; };
 				modules = [
-					./nixos
+					./system
 					inputs.home-manager.nixosModules.home-manager
 
 					{
