@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "ember-theme": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1778689039,
+        "narHash": "sha256-JJct0gFQYYTVamgxjvIxk3IgqsTB8PdU1tGyQYeJWdQ=",
+        "owner": "ember-theme",
+        "repo": "nvim",
+        "rev": "7365b8dede43a82ed1df741275b75333422e5402",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ember-theme",
+        "repo": "nvim",
+        "type": "github"
+      }
+    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
@@ -153,6 +169,7 @@
     },
     "root": {
       "inputs": {
+        "ember-theme": "ember-theme",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim"
