@@ -22,7 +22,7 @@ add_newline = true
 palette = 'ember'
 
 [directory]
-style = 'bold rose'
+style = 'bold red'
 format = '[$path ]($style)'
 truncation_length = 3
 truncation_symbol = '…/'
@@ -30,7 +30,7 @@ truncate_to_repo = false
 
 [character]
 success_symbol = '[ ](bold green)'
-error_symbol = '[ ](bold red)'
+error_symbol = '[ ](bold rose)'
 
 [directory.substitutions]
 'Documents' = '󰈙'
@@ -44,7 +44,7 @@ style = 'fg:gray'
 format = '[on]($style) [$symbol$branch ](bold blue)'
 
 [git_status]
-style = 'fg:bold red'
+style = 'fg:bold rose'
 format = '([$all_status$ahead_behind]($style) )'
 
 [fill]
@@ -73,7 +73,7 @@ symbol = '󰏗 '
 
 [jobs]
 symbol = ' '
-style = 'red'
+style = 'rose'
 number_threshold = 1
 format = '[$symbol]($style)'
 
