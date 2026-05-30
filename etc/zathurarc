@@ -29,3 +29,6 @@ set recolor                     "true"
 set recolor-lightcolor          "#141415"
 set recolor-darkcolor           "#cdcdcd"
 set recolor-keephue             "true"
+
+# Mappings
+map <C-c> exec "xclip -selection primary -o | xclip -selection clipboard"
