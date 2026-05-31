@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 {
-	# wayland tweaks
+	# wayland
 	environment.sessionVariables = {
 		NIXOS_OZONE_WL = "1";
 		XDG_CURRENT_DESKTOP = "Hyprland";
