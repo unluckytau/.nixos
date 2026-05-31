@@ -10,6 +10,11 @@
 		nixvim.url = "github:nix-community/nixvim/nixos-25.11";
 		nixvim.inputs.nixpkgs.follows = "nixpkgs";
 
+		noctalia = {
+			url = "github:noctalia-dev/noctalia-shell";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
+
 		ember-theme = {
 			url = "github:ember-theme/nvim";
 			flake = false;

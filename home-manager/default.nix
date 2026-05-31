@@ -5,6 +5,7 @@
 		./nixvim
 		./bash.nix
 		./zathura.nix
+		./noctalia.nix
 	];
 
 	programs.kitty = {

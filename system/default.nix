@@ -13,6 +13,8 @@
 	boot.loader.systemd-boot.enable = true;
 	boot.loader.efi.canTouchEfiVariables = true;
 
+	hardware.bluetooth.enable = true;
+
 	networking.hostName = "Tau";
 	networking.networkmanager.enable = true;
 	time.timeZone = "Asia/Kuala_Lumpur";
