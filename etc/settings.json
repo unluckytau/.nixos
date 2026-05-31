@@ -233,8 +233,15 @@
     "wallpaperChangeMode": "random",
     "randomIntervalSec": 300,
     "transitionDuration": 1500,
-    "transitionType": [],
-    "skipStartupTransition": true,
+    "transitionType": [
+      "honeycomb",
+      "pixelate",
+      "wipe",
+      "stripes",
+      "disc",
+      "fade"
+    ],
+    "skipStartupTransition": false,
     "transitionEdgeSmoothness": 0.05,
     "panelPosition": "follow_bar",
     "hideWallpaperFilenames": false,
