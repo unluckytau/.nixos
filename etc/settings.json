@@ -49,17 +49,7 @@
           "unfocusedIconsOpacity": 1
         }
       ],
-      "center": [
-        {
-          "clockColor": "none",
-          "customFont": "SF Pro Rounded",
-          "formatHorizontal": "HH:mm",
-          "formatVertical": "HH mm - dd MM",
-          "id": "Clock",
-          "tooltipFormat": "HH:mm ddd, MMM dd",
-          "useCustomFont": false
-        }
-      ],
+      "center": [],
       "right": [
         {
           "blacklist": [],
@@ -91,6 +81,15 @@
           "id": "Battery",
           "showNoctaliaPerformance": false,
           "showPowerProfiles": false
+        },
+        {
+          "clockColor": "none",
+          "customFont": "",
+          "formatHorizontal": "ddd MMM dd  HH:mm",
+          "formatVertical": "HH mm - dd MM",
+          "id": "Clock",
+          "tooltipFormat": "HH:mm ddd, MMM dd",
+          "useCustomFont": false
         }
       ]
     },
