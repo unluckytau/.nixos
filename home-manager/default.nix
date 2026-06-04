@@ -33,7 +33,11 @@
 			cursor_trail_start_threshold = "2";
 		};
 		shellIntegration.mode = "no-cursor";
+		extraConfig = ''
+			include ${../etc/ember.conf}
+		'';
 	};
+
 
 	programs.starship = {
 		enable = true;
