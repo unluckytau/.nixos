@@ -52,25 +52,16 @@
       "center": [],
       "right": [
         {
-          "blacklist": [],
-          "chevronColor": "none",
-          "colorizeIcons": false,
-          "drawerEnabled": true,
-          "hidePassive": false,
-          "id": "Tray",
-          "pinned": []
-        },
-        {
           "displayMode": "onhover",
           "iconColor": "none",
-          "id": "Network",
+          "id": "Volume",
+          "middleClickCommand": "pwvucontrol || pavucontrol",
           "textColor": "none"
         },
         {
           "displayMode": "onhover",
           "iconColor": "none",
-          "id": "Volume",
-          "middleClickCommand": "pwvucontrol || pavucontrol",
+          "id": "Network",
           "textColor": "none"
         },
         {
@@ -85,11 +76,20 @@
         {
           "clockColor": "none",
           "customFont": "",
-          "formatHorizontal": "ddd MMM dd  h:mm AP",
+          "formatHorizontal": "ddd MMM d  h:mm AP",
           "formatVertical": "HH mm - dd MM",
           "id": "Clock",
           "tooltipFormat": "HH:mm ddd, MMM dd",
           "useCustomFont": false
+        },
+        {
+          "blacklist": [],
+          "chevronColor": "none",
+          "colorizeIcons": false,
+          "drawerEnabled": true,
+          "hidePassive": false,
+          "id": "Tray",
+          "pinned": []
         }
       ]
     },
