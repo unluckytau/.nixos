@@ -233,12 +233,7 @@
     "randomIntervalSec": 300,
     "transitionDuration": 1500,
     "transitionType": [
-      "honeycomb",
-      "pixelate",
-      "wipe",
-      "stripes",
-      "disc",
-      "fade"
+      "honeycomb"
     ],
     "skipStartupTransition": false,
     "transitionEdgeSmoothness": 0.05,
