@@ -44,5 +44,4 @@
 		enableBashIntegration = true;
 	};
 	xdg.configFile."starship.toml".source = ../etc/starship.toml;
-
 }
