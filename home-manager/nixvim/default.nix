@@ -5,28 +5,13 @@
 		enable = true;
 		defaultEditor = true;
 
-	extraPlugins = [
-		(pkgs.vimUtils.buildVimPlugin {
-			name = "ember-theme";
-			src = inputs.ember-theme;
-		})
-	];
-
-	colorscheme = "ember";
-	# colorschemes = {
-	# 	vague.enable = true;
-	# 	gruvbox-material = {
-	# 		enable = true;
-	# 		settings = {
-	# 			foreground = "mix";
-	# 			background = "hard";
-	# 			ui_contrast = "high";
-	# 			float_style = "bright";
-	# 			statusline_style = "mix";
-	# 			cursor = "auto";
-	# 		};
-	# 	}; 
-	# };
+		extraPlugins = [
+			(pkgs.vimUtils.buildVimPlugin {
+				name = "ember-theme";
+				src = inputs.ember-theme;
+			})
+		];
+		colorscheme = "ember";
 
 		clipboard.register = "unnamedplus";
 		clipboard.providers.xclip.enable = true;

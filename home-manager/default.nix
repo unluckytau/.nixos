@@ -6,6 +6,7 @@
 		./bash.nix
 		./zathura.nix
 		./noctalia.nix
+		./helium.nix
 	];
 
 	programs.kitty = {
