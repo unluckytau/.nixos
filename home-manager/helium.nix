@@ -16,14 +16,6 @@
 			"SyncDisabled" = true;
 			"SpellcheckEnabled" = false;
 			"SitePerProcess" = true;
-			"ExtensionInstallForcelist" = [
-				"cjpalhdlnbpafiamejdnhcphjbkeiagm;https://clients2.google.com/service/update2/crx"
-				"dbepggeogbaibhgnhhndojpepiihcmeb;https://clients2.google.com/service/update2/crx"
-			];
-			"MandatoryExtensionsForIncognitoNavigation" = [
-				"cjpalhdlnbpafiamejdnhcphjbkeiagm"
-				"dbepggeogbaibhgnhhndojpepiihcmeb"
-			];
 			"MetricsReportingEnabled" = false;
 			"CloudReportingEnabled" = false;
 			"SafeBrowsingExtendedReportingEnabled" = false;
