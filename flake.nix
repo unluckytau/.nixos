@@ -7,9 +7,6 @@
 		home-manager.url = "github:nix-community/home-manager/release-25.11";
 		home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-		helium-flake.url = "github:oxcl/nix-flake-helium-browser";
-		helium-flake.inputs.nixpkgs.follows = "nixpkgs";
-
 		nixvim.url = "github:nix-community/nixvim/nixos-25.11";
 		nixvim.inputs.nixpkgs.follows = "nixpkgs";
 
