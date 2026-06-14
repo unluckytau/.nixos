@@ -55,26 +55,6 @@
         "type": "github"
       }
     },
-    "helium-flake": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1781264587,
-        "narHash": "sha256-SoILyWu6VcW2XApd1h3GnaM5iTL3WtF7Llx5OpWYk9g=",
-        "owner": "oxcl",
-        "repo": "nix-flake-helium-browser",
-        "rev": "4da5eba67ece1400e61a2500b85fc02df9497497",
-        "type": "github"
-      },
-      "original": {
-        "owner": "oxcl",
-        "repo": "nix-flake-helium-browser",
-        "type": "github"
-      }
-    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -234,7 +214,6 @@
     "root": {
       "inputs": {
         "ember-theme": "ember-theme",
-        "helium-flake": "helium-flake",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
