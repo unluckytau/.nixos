@@ -14,11 +14,10 @@ chmod +x ./install.sh
 ---
 ### Flatpaks
 ```
-flatpak install flathub io.gitlab.librewolf-community org.libreoffice.LibreOffice com.discordapp.Discord flathub org.gimp.GIMP -y
+flatpak install flathub app.zen_browser.zen io.gitlab.librewolf-community org.libreoffice.LibreOffice com.discordapp.Discord org.gimp.GIMP -y
 ```
 
 ---
 
 **`To do list`**
-- [x] Configure Nixvim
-- [ ] Switch from waybar to noctalia
+- [ ] configure `xdg.mime`
