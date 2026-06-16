@@ -4,7 +4,7 @@
     "barType": "simple",
     "position": "top",
     "monitors": [],
-    "density": "default",
+    "density": "compact",
     "showOutline": false,
     "showCapsule": false,
     "capsuleOpacity": 1,
