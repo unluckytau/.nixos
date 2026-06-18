@@ -3,8 +3,7 @@
 </p>
 
 ---
-
-### Installation
+**`Installation`**
 ```
 curl https://raw.githubusercontent.com/unluckytau/.nixos/main/install.sh > install.sh
 chmod +x ./install.sh
@@ -12,12 +11,11 @@ chmod +x ./install.sh
 ```
 
 ---
-### Flatpaks
+**`Flatpaks`**
 ```
 flatpak install flathub app.zen_browser.zen io.gitlab.librewolf-community org.libreoffice.LibreOffice com.discordapp.Discord org.gimp.GIMP com.github.jeromerobert.pdfarranger -y
 ```
 
 ---
-
 **`To do list`**
 - [ ] configure `xdg.mime`
