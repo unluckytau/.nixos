@@ -17,7 +17,7 @@
     "useSeparateOpacity": false,
     "marginVertical": 4,
     "marginHorizontal": 4,
-    "frameThickness": 6,
+    "frameThickness": 8,
     "frameRadius": 12,
     "outerCorners": true,
     "hideOnOverview": false,
@@ -170,7 +170,7 @@
   },
   "ui": {
     "fontDefault": "SF Pro Rounded",
-    "fontFixed": "GeistMono NFP",
+    "fontFixed": "GeistMono NF",
     "fontDefaultScale": 1,
     "fontFixedScale": 1,
     "tooltipsEnabled": false,
@@ -221,7 +221,7 @@
     "monitorDirectories": [],
     "enableMultiMonitorDirectories": false,
     "showHiddenFiles": false,
-    "viewMode": "single",
+    "viewMode": "recursive",
     "setWallpaperOnAllMonitors": true,
     "linkLightAndDarkWallpapers": true,
     "fillMode": "crop",
@@ -254,7 +254,22 @@
     "wallhavenResolutionWidth": "",
     "wallhavenResolutionHeight": "",
     "sortOrder": "name",
-    "favorites": []
+    "favorites": [
+      {
+        "appearance": "dark",
+        "colorScheme": "Noctalia (default)",
+        "darkMode": true,
+        "generationMethod": "muted",
+        "paletteColors": [
+          "#aaa7a1",
+          "#9e9d94",
+          "#9d9e94",
+          "#fd4663"
+        ],
+        "path": "/home/tau/hyprland/hypr/assets/7.jpg",
+        "useWallpaperColors": true
+      }
+    ]
   },
   "appLauncher": {
     "enableClipboardHistory": false,
