@@ -1,7 +1,7 @@
 {
   "settingsVersion": 59,
   "bar": {
-    "barType": "simple",
+    "barType": "framed",
     "position": "top",
     "monitors": [],
     "density": "compact",
@@ -17,7 +17,7 @@
     "useSeparateOpacity": false,
     "marginVertical": 4,
     "marginHorizontal": 4,
-    "frameThickness": 6,
+    "frameThickness": 5,
     "frameRadius": 12,
     "outerCorners": true,
     "hideOnOverview": false,
