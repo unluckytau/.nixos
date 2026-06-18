@@ -170,7 +170,7 @@
   },
   "ui": {
     "fontDefault": "SF Pro Rounded",
-    "fontFixed": "GeistMono NFP",
+    "fontFixed": "SFMono Nerd Font Medium",
     "fontDefaultScale": 1,
     "fontFixedScale": 1,
     "tooltipsEnabled": false,

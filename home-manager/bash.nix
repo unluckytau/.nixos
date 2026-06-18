@@ -16,6 +16,7 @@ let
 		 gs = "git status";
 		 fpurge = "flatpak uninstall --delete-data";
 		 funused = "flatpak uninstall --unused";
+		 ".." = "cd ..";
 	};
 
 in {

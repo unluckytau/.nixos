@@ -14,7 +14,7 @@ chmod +x ./install.sh
 ---
 ### Flatpaks
 ```
-flatpak install flathub app.zen_browser.zen io.gitlab.librewolf-community org.libreoffice.LibreOffice com.discordapp.Discord org.gimp.GIMP -y
+flatpak install flathub app.zen_browser.zen io.gitlab.librewolf-community org.libreoffice.LibreOffice com.discordapp.Discord org.gimp.GIMP com.github.jeromerobert.pdfarranger -y
 ```
 
 ---
