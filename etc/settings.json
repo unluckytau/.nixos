@@ -1,7 +1,7 @@
 {
   "settingsVersion": 59,
   "bar": {
-    "barType": "framed",
+    "barType": "simple",
     "position": "top",
     "monitors": [],
     "density": "compact",
@@ -170,7 +170,7 @@
   },
   "ui": {
     "fontDefault": "SF Pro Rounded",
-    "fontFixed": "GeistMono NF",
+    "fontFixed": "GeistMono NFP Black",
     "fontDefaultScale": 1,
     "fontFixedScale": 1,
     "tooltipsEnabled": false,
@@ -221,7 +221,7 @@
     "monitorDirectories": [],
     "enableMultiMonitorDirectories": false,
     "showHiddenFiles": false,
-    "viewMode": "recursive",
+    "viewMode": "browse",
     "setWallpaperOnAllMonitors": true,
     "linkLightAndDarkWallpapers": true,
     "fillMode": "crop",
@@ -233,7 +233,7 @@
     "randomIntervalSec": 300,
     "transitionDuration": 1500,
     "transitionType": [
-      "honeycomb"
+      "disc"
     ],
     "skipStartupTransition": false,
     "transitionEdgeSmoothness": 0.05,
@@ -282,7 +282,7 @@
     "clipboardWatchImageCommand": "wl-paste --type image --watch cliphist store",
     "position": "center",
     "pinnedApps": [],
-    "sortByMostUsed": true,
+    "sortByMostUsed": false,
     "terminalCommand": "alacritty -e",
     "customLaunchPrefixEnabled": false,
     "customLaunchPrefix": "",
@@ -296,7 +296,7 @@
     "ignoreMouseInput": false,
     "screenshotAnnotationTool": "",
     "overviewLayer": true,
-    "density": "default"
+    "density": "compact"
   },
   "controlCenter": {
     "position": "close_to_bar_button",
@@ -524,7 +524,7 @@
   "osd": {
     "enabled": true,
     "location": "top_right",
-    "autoHideMs": 2000,
+    "autoHideMs": 1500,
     "overlayLayer": true,
     "backgroundOpacity": 1,
     "enabledTypes": [
@@ -558,7 +558,7 @@
     "schedulingMode": "off",
     "manualSunrise": "06:30",
     "manualSunset": "18:30",
-    "generationMethod": "muted",
+    "generationMethod": "content",
     "monitorForColors": "",
     "syncGsettings": false
   },
@@ -589,7 +589,7 @@
   },
   "plugins": {
     "autoUpdate": false,
-    "notifyUpdates": true
+    "notifyUpdates": false
   },
   "idle": {
     "enabled": false,
