@@ -105,7 +105,7 @@
     "screenOverrides": []
   },
   "general": {
-    "avatarImage": "/home/tau/.nixos/etc/e-ink-pfp.png",
+    "avatarImage": "/home/tau/.nixos/images/e-ink-pfp.png",
     "dimmerOpacity": 0.2,
     "showScreenCorners": false,
     "forceBlackScreenCorners": false,
@@ -217,7 +217,7 @@
   "wallpaper": {
     "enabled": true,
     "overviewEnabled": false,
-    "directory": "/home/tau/.nixos/etc",
+    "directory": "/home/tau/.nixos/images/",
     "monitorDirectories": [],
     "enableMultiMonitorDirectories": false,
     "showHiddenFiles": false,
@@ -281,6 +281,20 @@
           "#ffb4ab"
         ],
         "path": "/home/tau/.nixos/etc/tau.png",
+        "useWallpaperColors": true
+      },
+      {
+        "appearance": "dark",
+        "colorScheme": "Noctalia (default)",
+        "darkMode": true,
+        "generationMethod": "content",
+        "paletteColors": [
+          "#cfc6b2",
+          "#ccc6bc",
+          "#c4c8b9",
+          "#ffb4ab"
+        ],
+        "path": "/home/tau/.nixos/images/tau.png",
         "useWallpaperColors": true
       }
     ]

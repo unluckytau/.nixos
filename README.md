@@ -1,5 +1,5 @@
 <p align="center">
-<img src="etc/header-nixos.png" alt="Hyprland Config Header" width="400">
+<img src="images/header-nixos.png" alt="Hyprland Config Header" width="400">
 </p>
 
 ---
