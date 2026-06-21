@@ -217,7 +217,7 @@
   "wallpaper": {
     "enabled": true,
     "overviewEnabled": false,
-    "directory": "/home/tau/hyprland/hypr/assets",
+    "directory": "/home/tau/.nixos/etc",
     "monitorDirectories": [],
     "enableMultiMonitorDirectories": false,
     "showHiddenFiles": false,
@@ -267,6 +267,20 @@
           "#fd4663"
         ],
         "path": "/home/tau/hyprland/hypr/assets/7.jpg",
+        "useWallpaperColors": true
+      },
+      {
+        "appearance": "dark",
+        "colorScheme": "Noctalia (default)",
+        "darkMode": true,
+        "generationMethod": "content",
+        "paletteColors": [
+          "#cfc6b2",
+          "#ccc6bc",
+          "#c4c8b9",
+          "#ffb4ab"
+        ],
+        "path": "/home/tau/.nixos/etc/tau.png",
         "useWallpaperColors": true
       }
     ]
