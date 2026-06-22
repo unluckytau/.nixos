@@ -5,6 +5,6 @@
 		inputs.noctalia.homeModules.default
 	];
 
-	programs.noctalia-shell.enable = true;
+	programs.noctalia.enable = true;
 	xdg.configFile."noctalia/settings.json".source = ../etc/settings.json;
 }
