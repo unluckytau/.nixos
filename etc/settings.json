@@ -217,7 +217,7 @@
   "wallpaper": {
     "enabled": true,
     "overviewEnabled": false,
-    "directory": "/home/tau/.nixos/images/",
+    "directory": "/home/tau/.nixos/images",
     "monitorDirectories": [],
     "enableMultiMonitorDirectories": false,
     "showHiddenFiles": false,
@@ -295,6 +295,20 @@
           "#ffb4ab"
         ],
         "path": "/home/tau/.nixos/images/tau.png",
+        "useWallpaperColors": true
+      },
+      {
+        "appearance": "dark",
+        "colorScheme": "Noctalia (default)",
+        "darkMode": true,
+        "generationMethod": "muted",
+        "paletteColors": [
+          "#b3a298",
+          "#a59c8d",
+          "#a3a18f",
+          "#fd4663"
+        ],
+        "path": "/home/tau/.nixos/images/knight-sit.png",
         "useWallpaperColors": true
       }
     ]
@@ -587,7 +601,7 @@
     "schedulingMode": "off",
     "manualSunrise": "06:30",
     "manualSunset": "18:30",
-    "generationMethod": "content",
+    "generationMethod": "muted",
     "monitorForColors": "",
     "syncGsettings": false
   },
