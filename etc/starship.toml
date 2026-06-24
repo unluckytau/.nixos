@@ -25,8 +25,8 @@ add_newline = true
 palette = "ember"
 
 [directory]
-style = "bg:surface0 fg:gold"
-format = "[ 󰉋 $path ]($style)"
+style = "fg:gold"
+format = "[$path]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 truncate_to_repo = false
@@ -40,11 +40,11 @@ vimcmd_symbol = '[❮](bold sage)'
 
 [git_branch]
 symbol = ""
-style = "bg:surface1 fg:olive"
+style = "fg:olive"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:surface1 fg:orange"
+style = "fg:orange"
 format = '[$all_status$ahead_behind ]($style)'
 conflicted = "🏳"
 ahead = "⇡${count}"
