@@ -24,12 +24,8 @@
 			tab_powerline_style = "slanted";
 			cursor_shape = "block";
 			cursor_blink_interval = "0.5";
-			cursor_stop_blinking_after = "1";
 			enable_audio_bell = "no";
 			confirm_os_window_close = "0";
-			cursor_trail = "200";
-			cursor_trail_decay = "0.1 0.4";
-			cursor_trail_start_threshold = "2";
 		};
 		shellIntegration.mode = "no-cursor";
 		extraConfig = ''

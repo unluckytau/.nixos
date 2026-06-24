@@ -1,96 +1,146 @@
 format = """
+[](fg:bg)\
 $directory\
+[](fg:surface0 bg:surface1)\
 $git_branch\
 $git_status\
+[](fg:surface1)\
 $fill\
-$python\
-$lua\
-$nodejs\
-$golang\
-$haskell\
-$rust\
-$ruby\
-$package\
-$aws\
-$docker_context\
-$jobs\
 $cmd_duration\
+$c\
+$cpp\
+${custom.css}\
+${custom.nix}\
+$python\
+$rust\
+$lua\
+${custom.typst}\
+${custom.bash}\
+${custom.markdown}\
+$time\
 $line_break\
 $character"""
 
 add_newline = true
-palette = 'ember'
+palette = "ember"
 
 [directory]
-style = 'bold red'
-format = '[$path ]($style)'
+style = "bg:surface0 fg:gold"
+format = "[ 󰉋 $path ]($style)"
 truncation_length = 3
-truncation_symbol = '…/'
+truncation_symbol = "…/"
 truncate_to_repo = false
+read_only = " 󰌾"
+read_only_style = "fg:rose"
 
 [character]
-success_symbol = '[ ](bold green)'
-error_symbol = '[ ](bold rose)'
-
-[directory.substitutions]
-'Documents' = '󰈙'
-'Downloads' = ' '
-'Music' = ' '
-'Pictures' = ' '
+success_symbol = '[  ](bold coral)'
+error_symbol = '[  ](bold rose)'
+vimcmd_symbol = '[❮](bold sage)'
 
 [git_branch]
-symbol = ' '
-style = 'fg:gray'
-format = '[on]($style) [$symbol$branch ](bold blue)'
+symbol = ""
+style = "bg:surface1 fg:olive"
+format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = 'fg:bold rose'
-format = '([$all_status$ahead_behind]($style) )'
+style = "bg:surface1 fg:orange"
+format = '[$all_status$ahead_behind ]($style)'
+conflicted = "🏳"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+untracked = "?${count}"
+stashed = "*${count}"
+modified = "!${count}"
+staged = '+${count}'
+renamed = "»${count}"
+deleted = "✘${count}"
 
 [fill]
 symbol = ' '
 
+[c]
+symbol = " "
+style = "fg:steel"
+format = '[ $symbol $version ]($style)'
+
+[cpp]
+symbol = " "
+style = "fg:steel"
+format = '[ $symbol $version ]($style)'
+
 [python]
-style = 'yellow'
-symbol = ' '
-format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
-pyenv_version_name = true
-pyenv_prefix = ''
-
-[lua]
-symbol = ' '
-
-[nodejs]
-style = 'green'
-symbol = ' '
+symbol = "󰌠"
+style = "fg:steel"
+format = '[ $symbol $version ]($style)'
 
 [rust]
-style = 'orange'
-symbol = ' '
+symbol = "󱘗"
+style = "fg:coral"
+format = '[ $symbol $version ]($style)'
 
-[package]
-symbol = '󰏗 '
+[lua]
+symbol = "󰢱"
+style = "fg:steel"
+format = '[ $symbol $version ]($style)'
 
-[jobs]
-symbol = ' '
-style = 'rose'
-number_threshold = 1
-format = '[$symbol]($style)'
+[custom.css]
+symbol = " "
+style = "fg:mauve"
+format = '[ $symbol ]($style)'
+detect_extensions = ["css", "scss", "sass", "less"]
+
+[custom.nix]
+symbol = " "
+style = "fg:steel"
+format = '[ $symbol ]($style)'
+detect_extensions = ["nix"]
+detect_files = ["flake.nix", "shell.nix", "default.nix"]
+
+[custom.typst]
+symbol = " "
+style = "fg:gold"
+format = '[ $symbol ]($style)'
+detect_extensions = ["typ"]
+
+[custom.bash]
+symbol = " "
+style = "fg:sage"
+format = '[ $symbol ]($style)'
+detect_extensions = ["sh", "bash"]
+detect_files = [".bashrc", ".bash_profile"]
+
+[custom.markdown]
+symbol = "󰍔 "
+style = "fg:fg_alt"
+format = '[ $symbol ]($style)'
+detect_extensions = ["md", "markdown"]
+
+[time]
+disabled = false
+time_format = "%R"
+style = "fg:subtle"
+format = '[ 󰥔 $time ]($style)'
 
 [cmd_duration]
 min_time = 500
-style = 'italic fg:yellow'
-format = 'took [$duration]($style)'
+style = "fg:muted"
+format = "[ 󰔛 $duration ]($style)"
 
 [palettes.ember]
-bg0    = "#1c1b19"
-fg0    = "#d8d0c0"
-red    = "#e08060"
-green  = "#8a9868"
-yellow = "#c8b468"
-blue   = "#7890a0"
-purple = "#988090"
-aqua   = "#80a090"
-orange = "#c09058"
-gray   = "#706c61"
-rose   = "#b07878"
+bg       = "#1c1b19"
+fg       = "#d8d0c0"
+surface0 = "#272623"
+surface1 = "#363430"
+muted    = "#5e5a53"
+subtle   = "#837f75"
+fg_alt   = "#b0a898"
+coral    = "#e08060"
+orange   = "#c09058"
+gold     = "#c8b468"
+olive    = "#8a9868"
+sage     = "#80a090"
+steel    = "#7890a0"
+rose     = "#b07878"
+mauve    = "#988090"
