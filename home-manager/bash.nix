@@ -2,7 +2,6 @@
 
 let
 	aliases = {
-		 s = "sudo ";
 		 v = "nvim";
 		 hiscw = "history -c && history -w";
 		 ls = "ls -ll";
@@ -14,8 +13,6 @@ let
 		 ga = "git add";
 		 gc = "git commit -m";
 		 gs = "git status";
-		 fpurge = "flatpak uninstall --delete-data";
-		 funused = "flatpak uninstall --unused";
 		 ".." = "cd ..";
 	};
 

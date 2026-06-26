@@ -36,7 +36,6 @@
 		libayatana-appindicator 
 		swayimg
 		hyprsunset 
-		hypridle 
 		hyprshot 
 		hyprlock 
 		kdePackages.dolphin 

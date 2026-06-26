@@ -23,7 +23,6 @@
 		isNormalUser = true;
 		description = "tau";
 		extraGroups = [ "networkmanager" "wheel" ];
-		packages = with pkgs; [];
 	};
 
 	services.pulseaudio.enable = false;
@@ -38,7 +37,6 @@
 	fonts.fontconfig.enable = true;
 	fonts.packages = with pkgs; [
 		nerd-fonts.symbols-only
-		nerd-fonts.jetbrains-mono
 		nerd-fonts.geist-mono
 		crimson-pro
 	];
