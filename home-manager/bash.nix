@@ -3,7 +3,7 @@
 let
 	aliases = {
 		 s = "sudo ";
-		 v = "nvim";
+		 vim = "nvim";
 		 hiscw = "history -c && history -w";
 		 ls = "ls -ll";
 		 lsg = "sudo nix-env --list-generations -p /nix/var/nix/profiles/system";

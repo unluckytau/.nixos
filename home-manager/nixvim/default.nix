@@ -4,6 +4,16 @@
 	programs.nixvim = {
 		enable = true;
 		defaultEditor = true;
+		clipboard.register = "unnamedplus";
+		clipboard.providers.xclip.enable = true;
+
+		plugins = {
+			web-devicons.enable = true;
+			mini-pick.enable = true;
+			nvim-autopairs.enable = true;
+			friendly-snippets.enable = true;
+			luasnip.enable = true;
+		};
 
 		extraPlugins = [
 			(pkgs.vimUtils.buildVimPlugin {
@@ -13,13 +23,13 @@
 		];
 		colorscheme = "ember";
 
-		clipboard.register = "unnamedplus";
-		clipboard.providers.xclip.enable = true;
-
-		imports = [ 
-			./keybinds.nix
+		imports = [
 			./settings.nix
-			./plugins
+			./keymaps.nix
+			./treesitter.nix
+			./lsp.nix
+			./cmp.nix
+			./toggleterm.nix
 		];
 	};
 }

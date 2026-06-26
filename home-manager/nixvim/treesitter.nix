@@ -8,8 +8,6 @@
 				"rust"
 				"python"
 				"c"
-				"cpp"
-				"css"
 				"nix"
 				"lua"
 				"typst"

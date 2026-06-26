@@ -4,24 +4,6 @@
 	keymaps = [
 		{
 			mode = "n";
-			key = "<leader>w";
-			action = ":w<CR>";
-			options = {
-				desc = "Save";
-				silent = true;
-			};
-		}
-		{
-			mode = "n";
-			key = "<leader>q";
-			action = ":q<CR>";
-			options = {
-				desc = "Quit";
-				silent = true;
-			};
-		}
-		{
-			mode = "n";
 			key = "<leader>f";
 			action = ":Pick files<CR>";
 			options = {
