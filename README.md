@@ -1,8 +1,5 @@
-<p align="center">
-<img src="images/header-nixos.png" alt="Hyprland Config Header" width="400">
-</p>
+# <p align="center"> __NixOS Flake ❄️__ </p>
 
----
 **`Installation`**
 ```
 curl https://raw.githubusercontent.com/unluckytau/.nixos/main/install.sh > install.sh
