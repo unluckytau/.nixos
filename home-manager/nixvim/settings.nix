@@ -17,6 +17,7 @@
 		splitright = true;
 		list = true;
 		listchars = { tab = "  "; trail = " "; nbsp = "␣"; };
+		cursorline = true;
 		mouse = "a";
 		termguicolors = true;
 		showmode = false;
