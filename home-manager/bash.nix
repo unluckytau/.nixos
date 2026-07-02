@@ -13,7 +13,6 @@ let
 		 ga = "git add";
 		 gc = "git commit -m";
 		 gs = "git status";
-		 ".." = "cd ..";
 	};
 
 in {
