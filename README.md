@@ -1,4 +1,4 @@
-# <p align="center"> `NixOS Flake ❄️` </p>
+# <p align="center"> NixOS Flake ❄️ </p>
 
 **`Installation`**
 ```
