@@ -40,6 +40,7 @@
 		python3 
 		uv 
 		rustup 
+		rust-analyzer
 		typst
 
 		# apps
