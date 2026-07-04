@@ -44,7 +44,6 @@
 
 		# apps
 		protonup-qt
-		protontricks
 		
 		# misc
 		bibata-cursors
