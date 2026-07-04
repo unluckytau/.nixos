@@ -105,7 +105,7 @@
     "screenOverrides": []
   },
   "general": {
-    "avatarImage": "/home/tau/.nixos/images/kimie_.png",
+    "avatarImage": "/home/tau/.nixos/images/k3_dithered.png",
     "dimmerOpacity": 0.2,
     "showScreenCorners": false,
     "forceBlackScreenCorners": false,
@@ -303,12 +303,12 @@
         "darkMode": true,
         "generationMethod": "muted",
         "paletteColors": [
-          "#b3a298",
-          "#a59c8d",
-          "#a3a18f",
+          "#7d7369",
+          "#6f6b5d",
+          "#616152",
           "#fd4663"
         ],
-        "path": "/home/tau/.nixos/images/knight-sit.png",
+        "path": "/home/tau/.nixos/images/neoclassic_.png",
         "useWallpaperColors": true
       }
     ]
@@ -597,7 +597,7 @@
   "colorSchemes": {
     "useWallpaperColors": true,
     "predefinedScheme": "Noctalia (default)",
-    "darkMode": true,
+    "darkMode": false,
     "schedulingMode": "off",
     "manualSunrise": "06:30",
     "manualSunset": "18:30",
