@@ -27,7 +27,6 @@
 		fzf 
 		ripgrep 
 		fd 
-		auto-cpufreq 
 		killall 
 		brightnessctl
 
@@ -45,6 +44,7 @@
 
 		# apps
 		protonup-qt
+		protontricks
 		
 		# misc
 		bibata-cursors
