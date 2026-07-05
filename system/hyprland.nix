@@ -28,7 +28,6 @@
 	
 	# hyprland essentials
 	programs.hyprlock.enable = true;
-	services.udisks2.enable = true;
 
 	environment.systemPackages = with pkgs; [
 		hyprpolkitagent 
