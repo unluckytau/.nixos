@@ -303,12 +303,12 @@
         "darkMode": true,
         "generationMethod": "muted",
         "paletteColors": [
-          "#7d7369",
-          "#6f6b5d",
-          "#616152",
+          "#a0abab",
+          "#939b9f",
+          "#93979f",
           "#fd4663"
         ],
-        "path": "/home/tau/.nixos/images/neoclassic_.png",
+        "path": "/home/tau/.nixos/images/kurisu_.png",
         "useWallpaperColors": true
       }
     ]
@@ -597,7 +597,7 @@
   "colorSchemes": {
     "useWallpaperColors": true,
     "predefinedScheme": "Noctalia (default)",
-    "darkMode": false,
+    "darkMode": true,
     "schedulingMode": "off",
     "manualSunrise": "06:30",
     "manualSunset": "18:30",
