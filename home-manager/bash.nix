@@ -4,7 +4,7 @@ let
 	aliases = {
 		 v = "nvim";
 		 hiscw = "history -c && history -w";
-		 ls = "ls -la";
+		 ls = "ls -ll";
 		 lsg = "sudo nix-env --list-generations -p /nix/var/nix/profiles/system";
 		 dga = "sudo nix-collect-garbage -d";
 		 dgs = "sudo nix-env -p /nix/var/nix/profiles/system --delete-generations";

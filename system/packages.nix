@@ -42,10 +42,8 @@
 		rust-analyzer
 		typst
 
-		# apps
+		# misc. 
 		protonup-qt
-		
-		# misc
 		bibata-cursors
 	];
 }

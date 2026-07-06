@@ -13,13 +13,13 @@
     "contentPadding": 6,
     "fontScale": 1.1,
     "enableExclusionZoneInset": false,
-    "backgroundOpacity": 0,
-    "useSeparateOpacity": true,
+    "backgroundOpacity": 0.93,
+    "useSeparateOpacity": false,
     "marginVertical": 4,
     "marginHorizontal": 4,
     "frameThickness": 8,
     "frameRadius": 12,
-    "outerCorners": false,
+    "outerCorners": true,
     "hideOnOverview": false,
     "displayMode": "always_visible",
     "autoHideDelay": 500,
@@ -105,7 +105,7 @@
     "screenOverrides": []
   },
   "general": {
-    "avatarImage": "/home/tau/.nixos/images/k3_dithered.png",
+    "avatarImage": "/home/tau/.nixos/images/yaniko_.png",
     "dimmerOpacity": 0.2,
     "showScreenCorners": false,
     "forceBlackScreenCorners": false,
@@ -309,6 +309,20 @@
           "#fd4663"
         ],
         "path": "/home/tau/.nixos/images/kurisu_.png",
+        "useWallpaperColors": true
+      },
+      {
+        "appearance": "dark",
+        "colorScheme": "Noctalia (default)",
+        "darkMode": true,
+        "generationMethod": "content",
+        "paletteColors": [
+          "#becca3",
+          "#c4c9b5",
+          "#aacec0",
+          "#ffb4ab"
+        ],
+        "path": "/home/tau/.nixos/images/yanikowp_.png",
         "useWallpaperColors": true
       }
     ]
@@ -601,7 +615,7 @@
     "schedulingMode": "off",
     "manualSunrise": "06:30",
     "manualSunset": "18:30",
-    "generationMethod": "muted",
+    "generationMethod": "content",
     "monitorForColors": "",
     "syncGsettings": false
   },
