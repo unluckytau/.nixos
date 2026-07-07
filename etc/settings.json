@@ -11,15 +11,15 @@
     "capsuleColorKey": "none",
     "widgetSpacing": 7,
     "contentPadding": 6,
-    "fontScale": 1.1,
+    "fontScale": 1.1099999999999999,
     "enableExclusionZoneInset": false,
-    "backgroundOpacity": 0.93,
-    "useSeparateOpacity": false,
+    "backgroundOpacity": 0,
+    "useSeparateOpacity": true,
     "marginVertical": 4,
     "marginHorizontal": 4,
     "frameThickness": 8,
     "frameRadius": 12,
-    "outerCorners": true,
+    "outerCorners": false,
     "hideOnOverview": false,
     "displayMode": "always_visible",
     "autoHideDelay": 500,
@@ -105,7 +105,7 @@
     "screenOverrides": []
   },
   "general": {
-    "avatarImage": "/home/tau/.nixos/images/yaniko_.png",
+    "avatarImage": "/home/tau/.nixos/img/yaniko1pfp_.png",
     "dimmerOpacity": 0.2,
     "showScreenCorners": false,
     "forceBlackScreenCorners": false,
@@ -217,7 +217,7 @@
   "wallpaper": {
     "enabled": true,
     "overviewEnabled": false,
-    "directory": "/home/tau/.nixos/images",
+    "directory": "/home/tau/.nixos/img",
     "monitorDirectories": [],
     "enableMultiMonitorDirectories": false,
     "showHiddenFiles": false,
@@ -323,6 +323,20 @@
           "#ffb4ab"
         ],
         "path": "/home/tau/.nixos/images/yanikowp_.png",
+        "useWallpaperColors": true
+      },
+      {
+        "appearance": "dark",
+        "colorScheme": "Noctalia (default)",
+        "darkMode": true,
+        "generationMethod": "content",
+        "paletteColors": [
+          "#becca3",
+          "#c4c9b5",
+          "#aacec0",
+          "#ffb4ab"
+        ],
+        "path": "/home/tau/.nixos/img/yanikowp_.png",
         "useWallpaperColors": true
       }
     ]
