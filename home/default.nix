@@ -4,6 +4,7 @@
 	imports = [
 		./bash.nix
 		./nixvim
+		./hypr.nix
 		./noctalia.nix
 	];
 
