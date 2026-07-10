@@ -14,10 +14,3 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 ```
 flatpak install flathub app.zen_browser.zen io.gitlab.librewolf-community org.libreoffice.LibreOffice com.discordapp.Discord org.gimp.GIMP com.github.jeromerobert.pdfarranger -y
 ```
-
-3. Build Command
-Use,
-```
-sudo nixos-rebuild build --flake .#Tau --impure
-```
-since `hardware-configuration` is outside flake directory, so we need the `--impure` flag.
