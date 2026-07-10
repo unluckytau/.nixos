@@ -3,7 +3,6 @@
 <p align="center">
     <img src="etc/view.png" alt="Preview">
 </p>
-<br>
 
 **`Flatpaks`**
 
