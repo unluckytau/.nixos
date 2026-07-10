@@ -1,8 +1,8 @@
 -- displays
-local monitors_path = os.getenv("HOME") .. "/.local/state/hypr/monitors.lua"
+local monitors_path = os.getenv("HOME") .. "/.local/state/hypr/display.lua"
 local ok, err = pcall(dofile, monitors_path)
 if not ok then
-	hl.print("Failed to load monitors.lua: " .. tostring(err))
+	hl.print("Failed to load display.lua: " .. tostring(err))
 end
 
 -- startup apps
