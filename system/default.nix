@@ -1,50 +1,38 @@
-{ config, pkgs, lib, user, host, ... }:
+{ config, pkgs, ... }:
 
 {
-	imports = [ 
-		./hardware-configuration.nix 
-		./nvidia.nix
-		./packages.nix
-		./services.nix
-		./hyprland.nix
-	];
+  imports = [
+      ./hardware-configuration.nix
+      ./nvidia.nix
+      ./locales.nix
+      ./desktop.nix
+      ./packages.nix
+      ./services.nix
+    ];
 
-	boot.supportedFilesystems = [ "ntfs" "exfat" ];
-	boot.loader.systemd-boot.enable = true;
-	boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+  boot.supportedFilesystems = [ "ntfs" "exfat" ];
 
-	hardware.bluetooth.enable = true;
+  system.stateVersion = "26.05";
 
-	networking.hostName = "Tau";
-	networking.networkmanager.enable = true;
-	time.timeZone = "Asia/Kuala_Lumpur";
+  users.users."tau" = {
+    isNormalUser = true;
+    description = "tau";
+    extraGroups = [ "networkmanager" "wheel" ];
+  };
 
-	users.users.tau= {
-		isNormalUser = true;
-		description = "tau";
-		extraGroups = [ "networkmanager" "wheel" ];
-	};
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+    crimson-pro
+  ];
 
-	services.pulseaudio.enable = false;
-	security.rtkit.enable = true;
-	services.pipewire = {
-		enable = true;
-		alsa.enable = true;
-		alsa.support32Bit = true;
-		pulse.enable = true;
-	};
+  networking.hostName = "tau";
+  networking.networkmanager.enable = true;
+  networking.firewall.enable = true;
 
-	fonts.fontconfig.enable = true;
-	fonts.packages = with pkgs; [
-		nerd-fonts.symbols-only
-		nerd-fonts.jetbrains-mono
-		crimson-pro
-	];
+  hardware.bluetooth.enable = true;
 
-	networking.firewall.enable = true;
-
-	nixpkgs.config.allowUnfree = true;
-	nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-	system.stateVersion = "25.11";
+  nixpkgs.config.allowUnfree = true;
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }

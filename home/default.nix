@@ -1,10 +1,9 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, inputs, ... }:
 
 {
 	imports = [
-		./nixvim
 		./bash.nix
-		./zathura.nix
+		./nixvim
 		./noctalia.nix
 	];
 
@@ -28,9 +27,9 @@
 			confirm_os_window_close = "0";
 		};
 		shellIntegration.mode = "no-cursor";
-		extraConfig = ''
-			include ${../etc/ember.conf}
-		'';
+		# extraConfig = ''
+		# 	include ${../etc/ember.conf}
+		# '';
 	};
 
 	programs.starship = {

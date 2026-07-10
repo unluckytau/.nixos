@@ -1,16 +1,13 @@
 # <p align="center"> NixOS Flake ❄️ </p>
 
-**`Installation`**
-```
-curl https://raw.githubusercontent.com/unluckytau/.nixos/main/install.sh > install.sh
-chmod +x ./install.sh
-./install.sh
-```
+<p align="center">
+    <img src="etc/view.png" alt="Preview">
+</p>
+<br>
 
----
 **`Flatpaks`**
 
-1. Flathub Remote
+1. Add Flathub Remote
 ```
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 ```
@@ -19,6 +16,9 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 flatpak install flathub app.zen_browser.zen io.gitlab.librewolf-community org.libreoffice.LibreOffice com.discordapp.Discord org.gimp.GIMP com.github.jeromerobert.pdfarranger -y
 ```
 
----
-**`To do list`**
-- [ ] configure `xdg.mime`
+3. Build Command
+Use,
+```
+sudo nixos-rebuild build --flake .#Tau --impure
+```
+since `hardware-configuration` is outside flake directory, so we need the `--impure` flag.

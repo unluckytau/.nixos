@@ -1,12 +1,18 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, inputs, lib, user, host, ... }: 
 
 {
-	# wayland
+	services.displayManager.sddm = {
+		enable = true;
+		wayland.enable = true; 
+	};
+
 	environment.sessionVariables = {
 		NIXOS_OZONE_WL = "1";
 		XDG_CURRENT_DESKTOP = "Hyprland";
 		XDG_SESSION_TYPE = "wayland";
-		XDG_SESSION_DESKTOP = "Hyprland";
+		XDG_SESSION_DESKTOP = "Hyprland";	
+		__GLX_VENDOR_LIBRARY_NAME = "nvidia";
+		LIBVA_DRIVER_NAME = "nvidia";
 	};
 
 	xdg.portal = {
@@ -14,21 +20,12 @@
 		extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
 	};
 
-	# sddm
-	services.displayManager.sddm = {
-		enable = true;
-		wayland.enable = true;
-	};
-
-	# hyprland
 	programs.hyprland = {
 		enable = true;
-		xwayland.enable = true;
+		xwayland.enable = true; 
 	};
-	
-	# hyprland essentials
 	programs.hyprlock.enable = true;
-
+	
 	environment.systemPackages = with pkgs; [
 		hyprpolkitagent 
 		libappindicator 
@@ -36,7 +33,6 @@
 		swayimg
 		hyprsunset 
 		hyprshot 
-		hyprlock 
 		kdePackages.dolphin 
 		udiskie 
 		ntfs3g 

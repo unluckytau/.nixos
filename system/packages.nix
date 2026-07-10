@@ -1,49 +1,33 @@
 { config, pkgs, lib, ... }:
 
 {
-	programs.steam.enable = true;
-	programs.steam.gamescopeSession.enable = true;
-	programs.gamemode.enable = true;
+  # system packages
+  environment.systemPackages = with pkgs; [
+  wget
+  curl
+  wl-clipboard
+  zip
+  unzip
+  p7zip
+  libarchive
+  flatpak
+  htop
+  fzf
+  ripgrep
+  fd
+  killall
+  brightnessctl
 
-	programs.nix-ld.enable = true;
-	programs.nix-ld.libraries = with pkgs; [
-		stdenv.cc.cc.lib
-		zlib
-		glib
-		xorg.libX11
-	];
+  git
+  gcc
+  gnumake
+  cmake
+  python3
+  rustup
+  rust-analyzer
+  typst
 
-	environment.systemPackages = with pkgs; [
-		# core utils
-		wget 
-		curl 
-		wl-clipboard 
-		zip
-		unzip 
-		p7zip 
-		libarchive 
-		flatpak 
-		htop 
-		fzf 
-		ripgrep 
-		fd 
-		killall 
-		brightnessctl
-
-		# dev tools
-		git 
-		gcc 
-		gnumake 
-		cmake 
-		gfortran 
-		python3 
-		uv 
-		rustup 
-		rust-analyzer
-		typst
-
-		# misc. 
-		protonup-qt
-		bibata-cursors
-	];
+  protonup-qt
+  bibata-cursors
+  ];
 }

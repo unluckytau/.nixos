@@ -2,23 +2,18 @@
 
 {
 	boot.kernelParams = [ 
-		"nvidia-drm.modeset=1"
-		"nvidia-drm.fbdev=1"
 		"nvidia.NVreg_PreserveVideoMemoryAllocations=1"
 		"nvidia.NVreg_TemporaryFilePath=/var/tmp"
 	];
 
-	services.xserver.videoDrivers = [ 
-		"modesetting" 
-		"nvidia" 
-	];
+	services.xserver.videoDrivers = [ "modesetting" "nvidia" ];
 
 	hardware.graphics = {
 		enable = true;
 		enable32Bit = true;
 	};
 
-	# nvidia PRIME offload
+	# PRIME offload
 	hardware.nvidia = {
 		modesetting.enable = true;
 		powerManagement.enable = true;

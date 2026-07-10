@@ -3,6 +3,7 @@
 {
 	programs.nixvim = {
 		enable = true;
+		nixpkgs.config.allowUnfree = true;
 		defaultEditor = true;
 		clipboard.register = "unnamedplus";
 		clipboard.providers.xclip.enable = true;
@@ -16,20 +17,8 @@
 			luasnip.enable = true;
 		};
 
-		extraPlugins = [
-			(pkgs.vimUtils.buildVimPlugin {
-				name = "ember-theme";
-				src = inputs.ember-theme;
-			})
-		];
-		colorscheme = "ember";
-
 		imports = [
 			./settings.nix
-			./keymaps.nix
-			./treesitter.nix
-			./lsp.nix
-			./cmp.nix
 			./toggleterm.nix
 		];
 	};
