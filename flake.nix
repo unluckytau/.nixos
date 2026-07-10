@@ -15,6 +15,11 @@
 			url = "github:noctalia-dev/noctalia";
     	inputs.nixpkgs.follows = "nixpkgs";
 		};
+
+		ember-theme = {
+    	url = "github:ember-theme/nvim";
+    	flake = false;
+    };
 	};
 
 	outputs = inputs:
