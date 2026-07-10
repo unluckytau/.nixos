@@ -4,6 +4,11 @@
     <img src="etc/view.png" alt="Preview">
 </p>
 
+**`Preparation`**
+```bash
+curl https://raw.githubusercontent.com/unluckytau/.nixos/main/prep.sh > prep.sh
+```
+
 **`Flatpaks`**
 
 1. Add Flathub Remote
