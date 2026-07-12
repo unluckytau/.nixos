@@ -27,7 +27,6 @@
   rust-analyzer
   typst
 
-  protonup-qt
   bibata-cursors
   ];
 }

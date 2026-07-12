@@ -8,6 +8,7 @@
       ./desktop.nix
       ./packages.nix
       ./services.nix
+			./misc.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
