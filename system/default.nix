@@ -25,6 +25,7 @@
 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
+		nerd-fonts.comic-shanns-mono
     crimson-pro
   ];
 
