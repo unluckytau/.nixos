@@ -557,7 +557,14 @@ min_length = 80.0
 title_scroll = "none"
 type = "active_window"
 
+[widget.battery]
+font_family = "SF Pro Rounded"
+font_weight = 600
+type = "battery"
+
 [widget.clock]
+font_family = "SF Pro Rounded"
+font_weight = 600
 format = "{:%-I:%M %p}"
 type = "clock"
 
@@ -620,14 +627,22 @@ type = "spacer"
 stat = "cpu_temp"
 type = "sysmon"
 
+[widget.tray]
+font_family = "SF Pro Rounded"
+font_weight = 600
+type = "tray"
+
 [widget.volume]
-font_weight = 500
+font_family = "SF Pro Rounded"
+font_weight = 600
 type = "volume"
 
 [widget.workspaces]
 empty_color = "on_surface_variant"
 enabled = true
 focused_color = "primary"
+font_family = "SF Pro Rounded"
+font_weight = 600
 max_label_chars = 4
 minimal = true
 occupied_color = "on_surface_variant"
