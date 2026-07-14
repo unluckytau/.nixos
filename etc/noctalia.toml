@@ -413,7 +413,7 @@ ui_scale = 1.0
     screen_filter_regex = ""
 
     [shell.screen_corners]
-    enabled = true
+    enabled = false
     size = 32
 
     [shell.screenshot]
