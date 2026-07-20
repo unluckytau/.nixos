@@ -12,6 +12,7 @@
 		enable = true;
 		settings = {
 			# font_family = "GeistMono Nerd Font";
+			font_family = "Monocraft";
 			font_size = "11";
 			bold_font = "auto";
 			italic_font = "auto";
