@@ -37,8 +37,10 @@
 		enable = true;
 		enableBashIntegration = true;
 		settings = {
-			success_symbol = "[λ](bold green) ";
-      error_symbol = "[λ](bold red) ";
+			character = {
+				success_symbol = "[λ](bold green) ";
+      	error_symbol = "[λ](bold red) ";
+			};
 		};
 	};
 }
