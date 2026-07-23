@@ -6,3 +6,4 @@ cp /etc/nixos/hardware-configuration.nix /home/tau/.nixos/system/hardware-config
 
 mkdir -p /home/tau/.local/state/hypr
 cp /home/tau/.nixos/etc/display.lua /home/tau/.local/state/hypr/
+cp /home/tau/.nixos/etc/blur.lua /home/tau/.local/state/hypr/
