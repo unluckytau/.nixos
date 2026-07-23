@@ -15,6 +15,7 @@
 		cmdheight = 0;
 		signcolumn = "yes";
 		splitright = true;
+		splitbelow = true;
 		list = true;
 		listchars = { tab = "  "; trail = " "; nbsp = "␣"; };
 		cursorline = true;

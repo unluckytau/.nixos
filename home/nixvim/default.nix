@@ -28,6 +28,7 @@
 		imports = [
 			./settings.nix
 			./toggleterm.nix
+			./keymaps.nix
 		];
 	};
 }
