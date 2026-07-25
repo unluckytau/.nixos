@@ -1,3 +1,4 @@
+-- -> ~/.local/state/hypr/
 -- general blur
 hl.config({
 	decoration = {
