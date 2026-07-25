@@ -13,6 +13,10 @@ hl.config({
 		rounding = 14,
   	rounding_power = 7,
 	},
+
+	animations = {
+		enabled = false,
+	},
 })
 
 -- animation functions
