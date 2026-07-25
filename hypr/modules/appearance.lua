@@ -9,11 +9,6 @@ hl.config({
 		border_size = 0,
 	},
 
-	decoration = {
-		rounding = 14,
-  	rounding_power = 7,
-	},
-
 	animations = {
 		enabled = false,
 	},
