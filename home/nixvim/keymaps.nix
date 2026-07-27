@@ -38,5 +38,23 @@
       	silent = true;
     	};
     }
+		{
+    	mode = "n";
+    	key = "<leader>gh";
+    	action = "<cmd>tabprevious<CR>";
+    	options = {
+      	desc = "previous tab";
+      	silent = true;
+    	};
+    }
+		{
+    	mode = "n";
+    	key = "<leader>gl";
+    	action = "<cmd>tabnext<CR>";
+    	options = {
+      	desc = "next tab";
+      	silent = true;
+    	};
+    }
 	];
 }

@@ -13,12 +13,8 @@ hl.config({
 			size = 7,
 			popups = true,
 			popups_ignorealpha = 0.2,
-			-- enabled = true,
-			-- size = 8,
-			-- passes = 3,
-			-- vibrancy = 0.1696,
+			new_optimizations = true,
 			-- ignore_opacity = true,
-			-- new_optimizations = true,
 		},
 	},
 })

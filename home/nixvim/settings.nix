@@ -10,27 +10,44 @@
 	};
 
 	opts = {
+		# UI
 		number = true;
 		relativenumber = true;
-		cmdheight = 0;
 		signcolumn = "yes";
-		splitright = true;
-		splitbelow = true;
-		list = true;
-		listchars = { tab = "  "; trail = " "; nbsp = "␣"; };
+		cmdheight = 0;
 		cursorline = true;
-		mouse = "a";
 		termguicolors = true;
 		showmode = false;
-		wrap = false;
+		
+		# indents
 		tabstop = 2;
 		shiftwidth = 2;
+		expandtab = true;
+		smartindent = true;
+		breakindent = true;
+
+		# search
+		ignorecase = true;
+		smartcase = true;
+		hlsearch = true;
+		incsearch = true;
+
+		# nav
+		wrap = false;
+		splitright = true;
+		splitbelow = true;
+
+		# misc
+		updatetime = 250;
+    timeoutlen = 300;
+		lazyredraw = true;
+		undofile = false;
 		swapfile = false;
+		backup = false;
+		mouse = "a";
 		inccommand = "split";
 		winborder = "rounded";
-	};
-
-	highlight = {
-		StatusLine = { bg = "NONE"; };
+		list = true;
+		listchars = { tab = "  "; trail = " "; nbsp = "␣"; };
 	};
 }

@@ -30,7 +30,7 @@
 		};
 		shellIntegration.mode = "no-cursor";
 		extraConfig = ''
-			include ${../etc/ember.conf}
+			include ${../etc/kitty_ember.conf}
 		'';
 	};
 
