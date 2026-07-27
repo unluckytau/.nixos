@@ -22,6 +22,6 @@ local mainMod = "SUPER"
 
 -- imports
 require("modules/default")
-require("modules/keybinds")
+require("modules/binds")
 require("modules/appearance")
 require("modules/misc")
