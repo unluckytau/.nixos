@@ -1,8 +1,9 @@
 { config, pkgs, lib, ... }:
 
 {
-  # system packages
   environment.systemPackages = with pkgs; [
+
+  # core
   wget
   curl
   wl-clipboard
@@ -18,15 +19,20 @@
   killall
   brightnessctl
 
+  # dev
   git
-  gcc
-  gnumake
-  cmake
   python3
   rustup
   rust-analyzer
   typst
 
+  # c++ toolchain
+  gcc
+  gnumake
+  cmake
+  gdb
+
+  # misc
   bibata-cursors
   ];
 }

@@ -1,4 +1,4 @@
-# <p align="center"> NixOS Flake ❄️ </p>
+# <p align="center"> _**NixOS Config**_</p>
 
 <p align="center">
     <img src="etc/view.png" alt="Preview">
