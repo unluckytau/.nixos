@@ -11,6 +11,7 @@
   unzip
   p7zip
   libarchive
+  ffmpeg
   flatpak
   htop
   fzf

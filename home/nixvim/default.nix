@@ -12,6 +12,7 @@
 			web-devicons.enable = true;
 			mini-pick.enable = true;
 			mini-statusline.enable = true;
+      indent-blankline.enable = true;
 			nvim-autopairs.enable = true;
 			friendly-snippets.enable = true;
 			luasnip.enable = true;
@@ -26,9 +27,12 @@
 		colorscheme = "ember";
 
 		imports = [
-			./settings.nix
-			./toggleterm.nix
+			./opts.nix
 			./keymaps.nix
+      ./treesitter.nix
+      ./lsp.nix
+      ./completion.nix
+			./toggleterm.nix
 		];
 	};
 }
