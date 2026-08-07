@@ -506,7 +506,7 @@ wallpaper_scheme = "muted"
     enable_community_templates = false
 
 [wallpaper]
-directory = "/home/tau/.nixos/etc"
+directory = "/home/tau/.nixos/etc/wallpapers"
 directory_dark = ""
 directory_light = ""
 edge_smoothness = 0.30000001192092896

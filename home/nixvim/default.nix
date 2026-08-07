@@ -10,12 +10,9 @@
 		
 		plugins = {
 			web-devicons.enable = true;
-			mini-pick.enable = true;
 			mini-statusline.enable = true;
       indent-blankline.enable = true;
 			nvim-autopairs.enable = true;
-			friendly-snippets.enable = true;
-			luasnip.enable = true;
 		};
 
 		extraPlugins = [

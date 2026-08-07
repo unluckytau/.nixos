@@ -2,7 +2,6 @@
 
 {
   environment.systemPackages = with pkgs; [
-
   # core
   wget
   curl
