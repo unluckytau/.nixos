@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, lib, user, host, ... }: 
+{ pkgs, ... }: 
 
 {
 	services.displayManager.sddm = {

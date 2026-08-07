@@ -1,4 +1,4 @@
-{ config, pkgs, lib, inputs, ... }:
+{ pkgs, inputs, ... }:
 
 {
 	programs.nixvim = {
@@ -31,7 +31,6 @@
 			./keymaps.nix
       ./treesitter.nix
       ./lsp.nix
-      ./completion.nix
 			./toggleterm.nix
 		];
 	};

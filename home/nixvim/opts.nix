@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ ... }:
 
 {
 	globals = {
@@ -49,5 +49,9 @@
 		winborder = "rounded";
 		list = true;
 		listchars = { tab = "  "; trail = " "; nbsp = "␣"; };
+
+    # completion
+    completeopt = [ "menu" "menuone" "noselect" "popup" ];
+    pumheight = 10;
 	};
 }
