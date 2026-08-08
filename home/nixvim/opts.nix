@@ -49,8 +49,5 @@
 		winborder = "rounded";
 		list = true;
 		listchars = { tab = "  "; trail = " "; nbsp = "␣"; };
-
-    # completion
-    pumheight = 10;
 	};
 }

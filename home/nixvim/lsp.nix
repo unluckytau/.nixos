@@ -3,6 +3,10 @@
 {
   plugins.lsp = {
     enable = true;
+    inlayHints = true;
+    capabilities = ''
+      capabilities.textDocument.completion.completionItem.snippetSupport = true;
+    '';
 
     servers = {
       clangd.enable = true;
@@ -10,24 +14,30 @@
         enable = true;
         installCargo = true;
         installRustc = true;
+        installRustfmt = true;
+        settings.check.command = "clippy";
       };
-      pyright.enable = true;
-      nil_ls = {
-        enable = true;
-        settings = {
-          nix.flake.autoArchive = false;
-        };
-      };
+      basedpyright.enable = true;
+      nixd.enable = true;
       marksman.enable = true;
     };
-  };
 
-  extraConfigLua = ''
-    vim.diagnostic.config({
-      virtual_text = true,
-      signs = true,
-      underline = true,
-      update_in_insert = false,
-    })
-  '';
+    keymaps = {
+      silent = true;
+      diagnostic = {
+        "<leader>e" = "open_float";
+        "[d" = "goto_prev";
+        "]d" = "goto_next";
+      };
+      lspBuf = {
+        gd = "definition";
+        gD = "declaration";
+        gi = "implementation";
+        gr = "references";
+        K = "hover";
+        "<leader>rn" = "rename";
+        "<leader>ca" = "code_action";
+      };
+    };
+  };
 }
