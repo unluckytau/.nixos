@@ -13,6 +13,7 @@
 			mini-statusline.enable = true;
       indent-blankline.enable = true;
 			nvim-autopairs.enable = true;
+      blink-cmp.enable = true;
 		};
 
 		extraPlugins = [
