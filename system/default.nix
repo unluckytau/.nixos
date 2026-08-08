@@ -24,7 +24,7 @@
   };
 
   fonts.packages = with pkgs; [
-		nerd-fonts.geist-mono
+    maple-mono.NF
     crimson-pro
   ];
 
