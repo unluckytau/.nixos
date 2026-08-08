@@ -3,41 +3,26 @@
 {
   plugins.lsp = {
     enable = true;
-    inlayHints = true;
-    capabilities = ''
-      capabilities.textDocument.completion.completionItem.snippetSupport = true;
-    '';
-
     servers = {
       clangd.enable = true;
       rust_analyzer = {
         enable = true;
-        installCargo = true;
-        installRustc = true;
-        installRustfmt = true;
-        settings.check.command = "clippy";
+        package = null;
       };
       basedpyright.enable = true;
-      nixd.enable = true;
+      nil_ls = {
+        enable = true;
+        settings = {
+          nix.flake.autoArchive = false;
+        };
+      };
       marksman.enable = true;
     };
 
-    keymaps = {
-      silent = true;
-      diagnostic = {
-        "<leader>e" = "open_float";
-        "[d" = "goto_prev";
-        "]d" = "goto_next";
-      };
-      lspBuf = {
-        gd = "definition";
-        gD = "declaration";
-        gi = "implementation";
-        gr = "references";
-        K = "hover";
-        "<leader>rn" = "rename";
-        "<leader>ca" = "code_action";
-      };
-    };
+    onAttach = ''
+      if client:supports_method("textDocument/completion") then
+        vim.lsp.completion.enable(true, client.id, bufnr, { autotrigger = true })
+      end
+    '';
   };
 }

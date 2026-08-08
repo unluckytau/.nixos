@@ -49,5 +49,16 @@
 		winborder = "rounded";
 		list = true;
 		listchars = { tab = "  "; trail = " "; nbsp = "␣"; };
+
+    # native cmp
+    completeopt = [ "menu" "menuone" "noselect" "popup" ];
+    pumheight = 10;
 	};
+
+  diagnostics = {
+    virtual_text = true;
+    signs = true;
+    underline = true;
+    update_in_insert = false;
+  };
 }

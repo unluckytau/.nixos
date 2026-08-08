@@ -24,11 +24,10 @@
 		colorscheme = "ember";
 
 		imports = [
-			./opts.nix
+			./options.nix
 			./keymaps.nix
       ./treesitter.nix
       ./lsp.nix
-      ./cmp.nix
 			./toggleterm.nix
 		];
 	};
