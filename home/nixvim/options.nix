@@ -55,10 +55,8 @@
     pumheight = 10;
 	};
 
-  diagnostics = {
-    virtual_text = true;
-    signs = true;
-    underline = true;
-    update_in_insert = false;
+  diagnostic.settings = {
+      virtual_text = true;
+      update_in_insert = false;
   };
 }
