@@ -7,7 +7,8 @@
       clangd.enable = true;
       rust_analyzer = {
         enable = true;
-        package = null;
+        installCargo = false;
+        installRustc = false;
       };
       basedpyright.enable = true;
       nil_ls = {
